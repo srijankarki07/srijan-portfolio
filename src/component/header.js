@@ -34,6 +34,10 @@ export default function Header() {
     }
   }, [lightMode]);
 
+  const handleMenuItemClick = () => {
+    setIsOpen(false);
+  };
+
   return (
     <div className="container" id="home">
       <div className="header">
@@ -45,7 +49,7 @@ export default function Header() {
         <div className="sub-header">
           <div className={`menu ${isOpen ? "menu-open" : ""}`}>
             {menuItems?.map((item) => (
-              <a key={item.id} href={item.path}>
+              <a key={item.id} href={item.path} onClick={handleMenuItemClick}>
                 {item.name}
               </a>
             ))}

@@ -117,8 +117,14 @@ export default function Contact() {
             Chandragiri-8, Kathmandu
           </p>
           <div className="social-media">
-            <FaLinkedin />
-            <BsGithub />
+            <FaLinkedin
+              onClick={() =>
+                window.open("https://www.linkedin.com/in/srijan-karki/")
+              }
+            />
+            <BsGithub
+              onClick={() => window.open("https://github.com/srijankarki07")}
+            />
           </div>
         </div>
       </div>

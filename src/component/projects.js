@@ -16,26 +16,35 @@ const projects = [
     id: 2,
     name: "Hamro Share",
     image: "/hamroShare.png",
-    description:
-      "A website that shows all the stocks info for you and you can even buy and sell stocks.",
+    description: "A website that shows all the stocks info for you. ",
     techStack: ["Next.js", "Python"],
     githubLink: "https://github.com/srijanjs/hamroShare",
   },
-  {
-    id: 3,
-    name: "Chat-App-using-Appwrite",
-    image: "/appwrite.png",
-    description:
-      "This project is a real-time group chat application built using Next.js and Appwrite. Users can register, log in, and participate in group chats in real-time.It also has th feature to delete the sent messages.",
-    techStack: ["Next.js", "Appwrite"],
-    githubLink: "https://github.com/srijanjs/Chat-App-using-Appwrite",
-  },
+  // {
+  //   id: 3,
+  //   name: "Chat-App-using-Appwrite",
+  //   image: "/appwrite.png",
+  //   description:
+  //     "This project is a real-time group chat application built using Next.js and Appwrite. Users can register, log in, and participate in group chats in real-time.It also has th feature to delete the sent messages.",
+  //   techStack: ["Next.js", "Appwrite"],
+  //   githubLink: "https://github.com/srijanjs/Chat-App-using-Appwrite",
+  // },
 
   {
     id: 4,
     name: "Renovation Company Website",
     image: "/renovation.png",
     description: "A mock up design site for rennovation company.",
+    techStack: ["Next.js"],
+    githubLink: "https://github.com/srijankarki07/renovation-site-mock-design",
+  },
+
+  {
+    id: 5,
+    name: "Portfolio Website",
+    image: "/portfolio.png",
+    description:
+      "A refined and enhanced showcase of my work, designed to highlight my skills and projects with a sleek and modern interface.",
     techStack: ["Next.js"],
     githubLink: "https://github.com/srijankarki07/renovation-site-mock-design",
   },

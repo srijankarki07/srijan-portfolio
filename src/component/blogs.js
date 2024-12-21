@@ -38,7 +38,12 @@ export default function Blogs() {
       <div className="blogs-container">
         {posts.slice(0, visiblePosts).map((post) => (
           <div key={post.id} className="blog-card">
-            <img src={post?.cover_image} alt={post.title} />
+            <img
+              src={post?.cover_image}
+              alt={post.title}
+              width={"100%"}
+              height={"100%"}
+            />
             <div className="blog-content">
               <p className="blog-title">{post.title}</p>
               <div className="blog-meta">
