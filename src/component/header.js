@@ -26,13 +26,17 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    const root = document.documentElement;
-    if (lightMode) {
-      root.classList.add("light");
-    } else {
-      root.classList.remove("light");
-    }
-  }, [lightMode]);
+    const savedMode = localStorage.getItem("lightMode") === "true";
+    setLightMode(savedMode);
+    document.documentElement.classList.toggle("light", savedMode);
+  }, []);
+
+  const toggleLightMode = () => {
+    const newMode = !lightMode;
+    setLightMode(newMode);
+    localStorage.setItem("lightMode", newMode);
+    document.documentElement.classList.toggle("light", newMode);
+  };
 
   const handleMenuItemClick = () => {
     setIsOpen(false);
@@ -63,7 +67,7 @@ export default function Header() {
             </a>
           </div>
 
-          <div className="mode" onClick={() => setLightMode(!lightMode)}>
+          <div className="mode" onClick={toggleLightMode}>
             {lightMode ? <CiLight /> : <MdOutlineDarkMode />}
           </div>
         </div>

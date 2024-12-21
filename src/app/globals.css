@@ -6,8 +6,10 @@
 
 :root {
   --background: #121a1c;
+  --background-menu: #121a1c;
   --blogs-background: #1c2b2644;
   --aboutMe-background: #26404229;
+  --aboutMe-background-h1: linear-gradient(rgb(3, 212, 132), #6bc3ba5f);
   --text-color: #ffffff;
   --background-image: linear-gradient(#fff, rgba(255, 255, 255, 0.6));
 }
@@ -15,6 +17,8 @@
 :root.light {
   --background: rgba(211, 211, 211, 0.249);
   --aboutMe-background: #cadcdd37;
+  --aboutMe-background-h1: linear-gradient(rgb(3, 212, 132), #37c7b9fc);
+  --background-menu: #ffffff;
   --blogs-background: #bbcac56b;
   --text-color: #333;
   --background-image: linear-gradient(#202020, #888888);
@@ -242,7 +246,7 @@ a {
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: #0e1618;
+    background-color: var(--background-menu);
     height: 88vh;
     z-index: 100;
     padding: 10px;
@@ -306,7 +310,7 @@ a {
 }
 
 .aboutme h1 {
-  background-image: linear-gradient(rgb(3, 212, 132), #6ec8bf82);
+  background-image: var(--aboutMe-background-h1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
