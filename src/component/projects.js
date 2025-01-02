@@ -10,7 +10,7 @@ const projects = [
     description:
       "A dynamic weather application built with React, utilizing the OpenWeatherMap API to display real-time weather paramters such as temperature, humidity, and wind speed, including hourly and 5 days forecast with a visually appealing interface.",
     techStack: ["React", "OpenWeatherMap API"],
-    githubLink: "https://github.com/srijanjs/weather-app",
+    githubLink: "https://github.com/srijankarki07/weather-app",
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ const projects = [
     image: "/hamroShare.png",
     description: "A website that shows all the stocks info for you. ",
     techStack: ["Next.js", "Python"],
-    githubLink: "https://github.com/srijanjs/hamroShare",
+    githubLink: "https://github.com/srijankarki07/hamroshare",
   },
   // {
   //   id: 3,
@@ -46,7 +46,7 @@ const projects = [
     description:
       "A refined and enhanced showcase of my work, designed to highlight my skills and projects with a sleek and modern interface.",
     techStack: ["Next.js"],
-    githubLink: "https://github.com/srijankarki07/renovation-site-mock-design",
+    githubLink: "https://github.com/srijankarki07/srijan-portfolio",
   },
 ];
 export default function Projects() {
